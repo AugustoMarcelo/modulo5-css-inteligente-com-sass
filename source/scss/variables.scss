@@ -1,0 +1,43 @@
+$themeDefault: true; 					// O tema padrão será o default cujos estão valores definidos abaixo
+$themeBlood: false;
+$themeNature: false;
+
+$color: #9400D3;						// Cor da fonte
+$border: 1px solid $color;				// Borda
+$backgroundColorHover: #DA70D6;			// Cor do background para o efeito hover
+$colorHover: #FFF;						// Cor da fonte para o efeito hover
+
+@if $themeBlood {
+	$color: #CC170D;					
+	$border: 1px solid $color;			
+	$backgroundColorHover: #CC4045;		
+	$colorHover: #FFF;						
+
+} @else if $themeNature {
+	$color: #05B237;					
+	$border: 1px solid $color;			
+	$backgroundColorHover: #6DFF82;		
+	$colorHover: #FFF;	
+}
+
+@mixin menuComponent {
+	ul { 
+		list-style-type: none;
+	 	
+	 	li {
+	 		display: inline;
+	 		
+	 		a { 
+	 			text-decoration: none; 
+	 			color: $color; 
+	 			padding: 20px; 
+	 			font-weight: 600;
+
+	 			&:hover:not(.navbar-brand) {
+	 				background-color: $backgroundColorHover;
+					color: $colorHover;		
+	 			}
+	 		}
+	 	}
+	}
+}

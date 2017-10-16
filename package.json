@@ -1,0 +1,25 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Tarefa do módulo workflow para criar um boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "certificacao",
+    "bootstrap",
+    "boilerplate",
+    "npm",
+    "bower",
+    "gulp"
+  ],
+  "author": "Marcelo Augusto",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-minify-html-2": "^1.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
